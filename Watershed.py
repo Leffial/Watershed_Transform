@@ -3,9 +3,9 @@ import cv2
 
 
 def main():
-    folder = "tumbnail.jpg"
+    folder = "Pictures\\Saved Pictures"
 
-    imgfolder1 = folder + "gray21.512.tiff"
+    imgfolder1 = folder + "tumbnail.tiff"
     img = cv2.imread(imgfolder1,1)
 
     th = 127
