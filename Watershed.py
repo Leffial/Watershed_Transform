@@ -3,11 +3,11 @@ import cv2
 
 
 def main():
-    folder = "Pictures\\Saved Pictures"
-
-    imgfolder1 = folder + "tumbnail.tiff"
-    img = cv2.imread(imgfolder1,1)
-
+    folder = "tumbnail.jpg"
+    img = cv2.imread(folder,1)
+    
+    img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+    
     th = 127
     max_val = 255
 
@@ -28,3 +28,5 @@ def main():
         plt.xticks([])
         plt.yticks([])
     plt.show()
+if __name__ == "__main__":
+    main()
